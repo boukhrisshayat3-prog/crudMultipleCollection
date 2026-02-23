@@ -85,7 +85,7 @@ const createRouterCrud = (nameResource, nameCollection) => {
         }
     })
 
-    router.delete('/id', validateId, async(req, res, next)=>{
+    router.delete('/:id', validateId, async(req, res, next)=>{
         try {
             const result = await req.collection.deleteOne(
                 {_id: new ObjectId(req.params.id)}
