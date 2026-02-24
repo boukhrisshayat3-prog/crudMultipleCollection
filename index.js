@@ -128,14 +128,14 @@ const initServer = async () => {
             console.log(`🚀 Servidor CRUD corriendo en http://localhost:${PORT}`);
             console.log('📍 Endpoints disponibles:');
             console.log('   GET|POST|PUT|DELETE /productos');
-            console.log('   GET|POST|PUT|DELETE /clientes');
-            console.log('   GET|POST|PUT|DELETE /pedidos');
+            console.log('   GET|POST|PUT|DELETE /categorias');
     });
     } catch (error) {
         console.error('No se pudo iniciar el server', error.message)
         process.exit(1)
     }
 }
+
 
 const closeServer = async (signal) => {
     try {
